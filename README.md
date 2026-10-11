@@ -6,11 +6,6 @@
 
 Una **app web (HTML + CSS + JavaScript, sin servidor ni frameworks)** que apoya el **cumplimiento de pedidos en un almacén con cadena de frío**, medido con el **OTIF** (On Time In Full): un pedido cuenta como cumplido solo si llegó a tiempo y completo.
 
-- Ejemplo: piden 10 vasos y se entregan 9 → falla el *In Full*. Se entregan los 10 pero tarde → falla el *On Time*.
-- Tiene **3 módulos**, uno por cada problema principal que afecta el OTIF (tabla abajo).
-- Se publica en **GitHub Pages**. **La única forma de ingreso de información es un Google Sheet** (un solo enlace). No hay carga manual de Excel/CSV ni datos de ejemplo.
-- Quien lo construye no tiene experiencia previa en programación y usa IA para hacerlo.
-- Existe un **prototipo de escritorio (.exe) llamado AXIONLOG** ("WMS Cadena de Frío", planta 0801). La app web debe **verse y funcionar lo más parecido posible**. Solo se tienen capturas y plantillas de datos, no su código ni fórmulas.
 
 | Módulo | Problema que ataca | Técnicas |
 |---|---|---|
@@ -58,9 +53,6 @@ axionlog/
 ```
 
 **Para agregar o cambiar algo:** un cálculo → `calculo.js` del módulo; cómo se ve → `vista.js`; algo compartido → `nucleo/`. Una pantalla nueva = carpeta nueva con `vista.js` + una línea en `PANTALLAS` de `main.js`.
-
-**Publicar:** subir la carpeta **descomprimida** (con `js/`) a la raíz del repo y activar Pages (Settings → Pages → `main` / root).
-**Probar en local:** necesita servidor, porque usa módulos de JavaScript: extensión **Live Server** de VS Code (Go Live). Doble clic en `index.html` y F5 de "Start Debugging" **no funcionan** (la app avisa en pantalla).
 
 ---
 
