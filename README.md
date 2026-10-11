@@ -1,6 +1,4 @@
-# AXIONLOG web: documentación del proyecto (versión 2.0, arquitectura modular)
-
-Documento para continuar el proyecto en otra cuenta de Claude, entregando los cambios como zips con HTML, CSS y JS separados.
+# AXIONLOG web: documentación del proyecto 
 
 ---
 
