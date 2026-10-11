@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>AXIONLOG · Gestión OTIF</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <aside id="side">
+      <div class="brand"><b>✱<span> AXIONLOG</span></b><small>Planta 0801 · Gestión OTIF</small></div>
+      <button class="hide" id="hide"><span id="hi">«</span><span class="tx"> Ocultar menú</span></button>
+      <nav id="nav"></nav>
+    </aside>
+    <div id="wrap">
+      <main id="view"></main>
+    </div>
+    <div id="area-impresion"></div>
+    <script>
+      // La app usa módulos de JavaScript: no funcionan abriendo el archivo con doble clic.
+      if (location.protocol === 'file:') {
+        document.getElementById('view').innerHTML =
+          '<div class="card vacio"><h2>Abra la app desde un servidor</h2><p class="mu">Use «Go Live» (extensión Live Server de VS Code) o suba la carpeta a GitHub Pages. Abrirla con doble clic no funciona.</p></div>';
+      }
+    </script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
